@@ -1,0 +1,203 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-width: 1000px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.fixed-container {
+	max-width: 1000px;
+	margin: 0 auto;
+    padding: 0 0;
+    position: relative;
+}
+
+header {
+    min-height: 130px;
+	margin: 0 auto 0;
+	position: relative;
+        /*тень*/
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 14px 17px #E8E8E8;
+}
+
+
+.blue-box {
+    background-color: #00122f;
+    color: white;
+    /*padding: 20px 0;*/
+    min-height: 56px;
+}
+.blue-box a {
+    color: white;
+}
+.blue-box .fixed-container {
+     padding: 20px 0;
+}
+.blue-box time {
+    float: right;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+    float: left;
+}
+
+header .fixed-container {
+    padding: 40px 0 30px;
+}
+
+.logo-image {
+    position: relative;
+    float: left;
+}
+
+.select-wrapper{
+    display: inline-block;
+    position: relative;
+    float: left;
+    margin: 10px 50px;
+    /* обнуляем шрифт, чтобы убрать текст label */
+    font-size: 0;
+}
+.select-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 15px;
+    height: 1px;
+    border-bottom: 2px dashed #448ccb;
+}
+.custom-select {
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Восстанавливаем шрифт */
+    font-size: 16px;
+    /* для того, чтобы задать саму стрелку:
+        1. отведем для нее место; */
+    padding-right: 15px;
+    /* добавим ее фоном */
+    background: url(img/down-arrow.png) 100% center no-repeat;
+    background-size: 9px 5px;
+}
+
+.menu-realtime {
+    position: relative;
+    float: left;
+    margin: 10px 30px;
+    color: #91919f;
+}
+
+time span {
+    background-image: url("img/clock.png");
+    background-position: left center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding-left: 23px;
+    margin-left: 30px;
+    color: #91919f;
+}
+
+.weather {
+    background-image: url("img/cloudy.png");
+    background-position: left center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    float: left;
+    padding-left: 30px;
+    margin: 10px 5px 0 0;
+    color: #91919f;
+}
+
+.search-form {
+    position: relative;
+    float: right;
+    min-height: 20px;
+    padding: 0;
+}
+.search-form input {
+    min-width: 260px;
+    min-height: 45px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    border-radius: 45px 0 0 45px;
+    background-color: #f3f3f3;
+}
+.search-button {
+    float: right;
+    background-image: url('img/search-button.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f3f3f3;
+    min-width: 60px;
+    min-height: 45px;
+    padding: 0;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+}
+
+header nav {
+    padding-top: 40px;
+}
+header nav ul {
+    padding: 0;
+    margin: 40px 0 0;
+}
+header nav li::before {
+	content: "/";
+    margin: 0 10px;
+}
+header nav li{
+    display: inline;
+    margin: 0 0;
+}
+header nav li:first-child::before {
+    content: "";
+    margin: 0;
+}
+
+
+
+/*Центральный контейнер*/
+.block-comments-count {
+     background-image: url("img/icon-comments.png");
+     background-position: left center;
+     background-size: auto 100%;
+     display: inline-block;
+     padding-left: 20px;
+     background-repeat: no-repeat;
+}
+
+article time {
+     background-image: url("img/icon-time.png");
+     background-position: left center;
+     background-size: auto 100%;
+     display: inline-block;
+     padding-left: 20px;
+     background-repeat: no-repeat;
+}
+
+main {
+    background-color: #f9f9f9;
+}
+
+/*Левая колонка*/
+.news-day {
+    background-color: white;
+    max-width: 250px;
+    float: left;
+}
+
+section h2 {
+    padding: 25px 15px;
+}
