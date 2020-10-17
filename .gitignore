@@ -4,7 +4,8 @@
 
 # User-specific stuff:
 .idea/
-
+.idea/misc.xml
+.idea/блок 3.iml
 
 ### Python template
 # Byte-compiled / optimized / DLL files
@@ -216,3 +217,5 @@ fabric.properties
 # Editor-based Rest Client
 .idea/httpRequests
 
+!/.idea/misc.xml
+!/.idea/блок 3.iml
